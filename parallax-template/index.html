@@ -9,8 +9,14 @@
   <!-- CSS  -->
   <style>
     img{ background-image: url('BG1.jpg'); }
-    img { opacity : 0.7; }
+    img { opacity : 0.2; }
+
+    #p1{
+    font-size:25px;
+    }
 </style>
+
+
 
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,19 +24,19 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body class="#212121 grey darken-4">
-  <nav class="white" role="navigation">
+  <!--<nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">ADS<i class="material-icons ">gps_fixed</i></a>      
       <!--<ul class="right hide-on-med-and-down">
         <li><a href="#">Menu</a></li>
-      </ul>-->
+      </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Menu</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-  </nav>
+  </nav>-->
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -38,18 +44,18 @@
         <br><br>
         <h1 class="header col l6 s12  teal-text text-lighten-2">HTML5</h1>
         <div class="row">
-          <h6 class="header col l8 s12 white-text text-darken-2">
+          <p class="header col l8 s12 white-text text-darken-2">
             HTML5 é a quinta e última versão do HTML, 
             sigla de Hypertext Markup Language, uma das primeiras e principais linguagens de marcação da web. 
-            O HTML serve, basicamente, para o desenvolvimento de páginas que contenham conteúdos simples, 
-            como textos, imagens, áudio, vídeos e etc.</h6>
+            O HTML, serve basicamente para o desenvolvimento de páginas que contenham conteúdos simples, 
+            como textos, imagens, áudio, vídeos e etc.</p>
         </div>
         
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="BG1.jpg" alt="Unsplashed background img 1">
+    <div class="parallax"><img src="bghtml1.png" alt="Unsplashed background img 1">
     </div>
   </div>
 
@@ -67,17 +73,17 @@
         </div>      
               <div class="col s12 left">
                   <blockquote class="white-text text-darken-2">
-                      &lt;!DOCTYPE html&gt; <strong>Indica que está sendo usado o HTML 5</strong><br>
-                        &lt;html&gt; <strong>Início do código HTML</strong><br>
-                        &lt;head&gt; <strong>providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos.</strong><br>
-                            &lt;title&gt;Título da página&lt;/title&gt; <strong>Mostra o título do site, na aba do navegador</strong><br>
-                            &lt;meta charset="utf-8"/&gt; <strong>é uma tag meta utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres</strong><br>
+                      &lt;!DOCTYPE html&gt; <strong class="red">Indica que está sendo usado o HTML 5</strong><br>
+                        &lt;html&gt; <strong class="red">Início do código HTML</strong><br>
+                        &lt;head&gt; <strong class="red">providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos.</strong><br>
+                            &lt;title&gt;Título da página&lt;/title&gt; <strong class="red">Mostra o título do site, na aba do navegador</strong><br>
+                            &lt;meta charset="utf-8"/&gt; <strong class="red">é uma tag meta utilizada para comunicar aos navegadores qual é o formato de codificação de caracteres</strong><br>
                         &lt;/head&gt;<br>
-                        &lt;body&gt; <strong>O corpo do site, onde fica tudo que aparece em um site</strong><br>
+                        &lt;body&gt; <strong class="red">O corpo do site, onde fica tudo que aparece em um site</strong><br>
                         
                         &lt;/body&gt;<br>
                         &lt;/html&gt;<br>
-                    &lt;/&gt; <strong>Indica o fechamento da TAG</strong>
+                    &lt;/&gt; <strong class="red">Indica o fechamento da TAG</strong>
                   </blockquote>    
               </div>
           </p>
@@ -89,7 +95,120 @@
   </div>
   <!------------------------------------------------------------------------->
 
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header col l6 s12  teal-text text-lighten-2">CSS</h1>
+        <div class="row">
+          <p class="header col l8 s12 white-text text-darken-2">
+            CSS (Cascading Style Sheet, ou Folha de Estilo em Cascatas), 
+            é usado para a estilização das linguagens de marcação (site).
+            O CSS é responsavel por deixar um site com "Estilo", alterando cores, tamanhos de elementos, efeitos...
+          </p>
+        </div>
+        
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="bgcss.png" alt="Unsplashed background img 1">
+    </div>
+  </div>
+
+  <!------------------------------------------------------------------------->
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="teal-text text-lighten-2">Estrutura básica CSS</h4>
+          <p>
+            <p class="white-text text-darken-2">As folhas de estilo funcionam basicamente através de regras que são vinculadas às tags HTML.</p> 
+              <p class="white-text text-darken-2">E o que torna fácil a criação de folhas de estilo é que essas regras obedecem a uma estrutura 
+                muito simples, composta por seletor, propriedade e valor.</p>
+        </div>      
+              <div class="col s12 left">
+
+                
+                  <blockquote class="white-text text-darken-2">
+                    p {<br>
+                      color: red;<br>
+                    }          <br><br>
+                    
+                    O CSS usado na forma acima, faz com que:
+                    Um parágrafo fique com a cor vermelha.
+                    
+                  </blockquote>    
+              </div>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!------------------------------------------------------------------------->  
+
+
   
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      
+    </div>
+    <div class="parallax"><img src="bgjs.png" alt="Unsplashed background img 1">
+    </div>
+  </div>
+  <div class="container">
+    <br><br>
+    <h1 class="header col l6 s12  teal-text text-lighten-2">Javascript</h1>
+    <div class="row">
+      <p class="header col l8 s12 white-text text-darken-2" id="p1">
+        JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — 
+        toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — 
+        mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.
+      </p>
+    </div>
+    
+    <br><br>
+
+  </div>
+  <!-------------------------------------------------------------------------
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4 class="teal-text text-lighten-2">Estrutura básica CSS</h4>
+          <p>
+            <p class="white-text text-darken-2">As folhas de estilo funcionam basicamente através de regras que são vinculadas às tags HTML.</p> 
+              <p class="white-text text-darken-2">E o que torna fácil a criação de folhas de estilo é que essas regras obedecem a uma estrutura 
+                muito simples, composta por seletor, propriedade e valor.</p>
+        </div>      
+              <div class="col s12 left">
+
+                
+                  <blockquote class="white-text text-darken-2">
+                    p {<br>
+                      color: red;<br>
+                    }          <br><br>
+                    
+                    O CSS usado na forma acima, faz com que:
+                    Um parágrafo fique com a cor vermelha.
+                    
+                  </blockquote>    
+              </div>
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-------------------------------------------------------------------------
 
 
   <div class="parallax-container valign-wrapper">
@@ -99,7 +218,7 @@
           <h5 class="header col s12">Um framework front-end responsivo moderno baseado em Materialize Design</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" 
+          <a href="http://materializecss.com/getting-started.html" target="_blank" id="download-button" 
           class="btn-large waves-effect waves-light teal lighten-1 btn pulse">Saiba mais</a>
         </div>
       </div>
@@ -108,19 +227,27 @@
   </div>
 
   <div class="container">
-    <div class="section">
+    <div class="section">-->
+
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          
+        </div>
+        <div class="parallax"><img src="bgtrind.jpg" alt="Unsplashed background img 1">
+        </div>
+      </div>
 
       <!--   Icon Section   -->
+  <div class="container">
+    <div class="row center">
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center teal-text text-lighten-2">Acelera o desenvolvimento</h5>
+            <h5 class="center teal-text text-lighten-2">HTML</h5>
 
-            <p class="light white-text text-darken-2">Faz a maior parte do trabalho pesado, fornece estilos padrão,
-              que incorporam os componentes personalizados.
-               Além disso, possui animações e transições para fornecer uma experiência mais 
-               suave para os desenvolvedores e usúarios.</p>
+            <p class="light white-text text-darken-2">Criação de conteúdos simples, 
+              como textos, imagens, áudio, vídeos e etc.</p>
           </div>
         </div>
 
@@ -129,20 +256,19 @@
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
             <h5 class="center teal-text text-lighten-2">Foco no usuário</h5>
 
-            <p class="light white-text text-darken-2">Ao utilizar elementos e princípios do Materialize Design, 
-              é possível criar uma estrutura que incorpora componentes e animações que fornecem mais feedback aos usuários. 
-              Além disso, um único sistema responsivo subjacente em todas as plataformas permite uma experiência de usuário mais unificada.</p>
+            <p class="light white-text text-darken-2">Responsavel pelo "Estilo" do site, 
+              alterando cores, tamanhos de elementos, efeitos...</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center teal-text text-lighten-2">Fácil de trabalhar</h5>
+            <h5 class="center teal-text text-lighten-2">JavaScript</h5>
 
-            <p class="light white-text text-darken-2">Documentação detalhada, bem como exemplos de código específicos para ajudar 
-              os novos usuários a começar. existe uma área aberta para comentários e resposta de quaisquer 
-              perguntas que um usuário possa ter sobre o Materialize.</p>
+            <p class="light white-text text-darken-2">linguagem de programação
+              responsavel pelas funções do site.
+            </p>
           </div>
         </div>
       </div>
@@ -155,7 +281,7 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">Um poderoso Framework para aprender</h5>
+          <h5 class="header col s12 light">Poderosas ferramentas para aprender</h5>
           <p>Sua dedicação é o limite</p>
         </div>
       </div>
@@ -171,10 +297,10 @@
           <h4 class="grey-text text-lighten-4">
            Análise e Desenvolvimento de Sistemas - 6º Semestre
           </h4>
-
-
         </div>
-<!--
+      </div>
+    </div>  
+      <!--
         <div class="col l4 s5">
           <h5 class="white-text">Curso</h5>
           <ul>
@@ -206,8 +332,8 @@
       </div>
     </div>-->
     <div class="footer-copyright">
-      <div class="container">
-      conteudo produzido por <a class="brown-text text-lighten-3" href="http://materializecss.com">ADS 2022 Semestre 6</a>
+      <div class="container center">
+      conteudo produzido por <a class="brown-text text-lighten-3" href="https://guilhermeeletricista.vercel.app/" target="_blank">ADS 2022 Semestre 6</a>
       </div>
     </div>
   </footer>
