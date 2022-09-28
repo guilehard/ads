@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Pt-BR">
 <head>
+  <link rel="shortcut icon" href="logo.jpeg">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>ADS - Feira de Profissões</title>
 
   <!-- CSS  -->
+  <style>
+    img{ background-image: url('BG1.jpg'); }
+    img { opacity : 0.7; }
+</style>
+
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -13,10 +20,10 @@
 <body class="#212121 grey darken-4">
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">ADS<i class="material-icons">gps_fixed</i></a>      
-      <ul class="right hide-on-med-and-down">
+      <a id="logo-container" href="#" class="brand-logo">ADS<i class="material-icons ">gps_fixed</i></a>      
+      <!--<ul class="right hide-on-med-and-down">
         <li><a href="#">Menu</a></li>
-      </ul>
+      </ul>-->
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Menu</a></li>
@@ -29,12 +36,13 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">HTML5</h1>
-        <div class="row center">
-          <h4 class="header col s12 light z-depth-5">HTML5 é a quinta e última versão do HTML, 
+        <h1 class="header col l6 s12  teal-text text-lighten-2">HTML5</h1>
+        <div class="row">
+          <h6 class="header col l8 s12 white-text text-darken-2">
+            HTML5 é a quinta e última versão do HTML, 
             sigla de Hypertext Markup Language, uma das primeiras e principais linguagens de marcação da web. 
             O HTML serve, basicamente, para o desenvolvimento de páginas que contenham conteúdos simples, 
-            como textos, imagens, áudio, vídeos e etc.</h4>
+            como textos, imagens, áudio, vídeos e etc.</h6>
         </div>
         
         <br><br>
@@ -52,7 +60,7 @@
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="teal-text text-lighten-2">TAG HTML</h4>
+          <h4 class="teal-text text-lighten-2">Estrutura básica HTML</h4>
           <p>
             <p class="white-text text-darken-2">Um documento HTML recebe algumas tags que formam a sua estrutura básica.</p> 
               <p class="white-text text-darken-2">No HTML5, o documento padrão recebe a seguinte estrutura:</p>
@@ -92,11 +100,11 @@
         </div>
         <div class="row center">
           <a href="http://materializecss.com/getting-started.html" id="download-button" 
-          class="btn-large waves-effect waves-light teal lighten-1">Download</a>
+          class="btn-large waves-effect waves-light teal lighten-1 btn pulse">Saiba mais</a>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="BG2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax z-depth-5"><img src="BG2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
   <div class="container">
@@ -156,20 +164,28 @@
   </div>
 
   <footer class="page-footer teal">
-    <div class="container">
+    <div class="container center">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Integrantes do GRUPO</h5>
-          <p class="grey-text text-lighten-4">
-            Guilherme<br>
-            Antônio<br>
-            João Victor<br>
-            João Fernando<br>
-          </p>
+        <div class="col l12 s12">
+          <h5 class="white-text"></h5>
+          <h4 class="grey-text text-lighten-4">
+           Análise e Desenvolvimento de Sistemas - 6º Semestre
+          </h4>
 
 
         </div>
-        <div class="col l3 s12">
+<!--
+        <div class="col l4 s5">
+          <h5 class="white-text">Curso</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Guilherme</a></li>
+            <li><a class="white-text" href="#!">Antônio</a></li>
+            <li><a class="white-text" href="#!">João Victor</a></li>
+            <li><a class="white-text" href="#!">João Fernando</a></li>
+          </ul>
+        </div>
+
+        <div class="col l4 s3">
           <h5 class="white-text">Curso</h5>
           <ul>
             <li><a class="white-text" href="#!">ADS</a></li>
@@ -178,20 +194,20 @@
             <li><a class="white-text" href="#!">ADS</a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Turma</h5>
+        <div class="col l4 s3">
+          <h5 class="white-text">Semestre</h5>
           <ul>
             <li><a class="white-text" href="#!">6</a></li>
-            <li><a class="white-text" href="#!">2</a></li>
+            <li><a class="white-text" href="#!">6</a></li>
             <li><a class="white-text" href="#!">6</a></li>
             <li><a class="white-text" href="#!">6</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </div>-->
     <div class="footer-copyright">
       <div class="container">
-      conteuo produzido por <a class="brown-text text-lighten-3" href="http://materializecss.com">ADS 2022 turma 6</a>
+      conteudo produzido por <a class="brown-text text-lighten-3" href="http://materializecss.com">ADS 2022 Semestre 6</a>
       </div>
     </div>
   </footer>
@@ -204,3 +220,4 @@
 
   </body>
 </html>
+
