@@ -23,6 +23,15 @@
     }
 </style>
 
+<style>
+  #button {
+    width: 100%;
+    margin: 10px;
+    font-size: 500%;
+    padding: 30px;
+  };
+</style>
+
 
 
 
@@ -34,7 +43,7 @@
   <!--<nav class="white" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">ADS<i class="material-icons ">gps_fixed</i></a>      
-      <!--<ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down">
         <li><a href="#">Menu</a></li>
       </ul>
 
@@ -191,7 +200,7 @@
           <h4 class="teal-text text-lighten-2">Sintaxe JavaScript</h4>
           <p>
             <p class="white-text text-darken-2">A sintaxe basica do javascript pode ser vista logo abaixo</p> 
-              <p class="white-text text-darken-2">Nesse exemplo criamos um botão.</p>
+              <p class="white-text text-darken-2">Nesse exemplo criamos um botão que muda a cor.</p>
         </div>      
               <div class="col s12 left">
 
@@ -203,9 +212,9 @@
                     O valor que ele recebe, que é a função que será executada, 
                     diz tudo, já que ela é invocada diretamente da tag de abertura.</p>
                     
-                    <button class= "btn-large waves pulse" onclick="funçãoQueSeráExecutada()">Clique aqui</button>
-
-
+                    
+                    <button id="button">Mudar cor</button>
+                    
                   </blockquote>    
               </div>
           </p>
@@ -216,60 +225,6 @@
     </div>
   </div>
   <!------------------------------------------------------------------------->  
-
-  <!-------------------------------------------------------------------------
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4 class="teal-text text-lighten-2">Estrutura básica CSS</h4>
-          <p>
-            <p class="white-text text-darken-2">As folhas de estilo funcionam basicamente através de regras que são vinculadas às tags HTML.</p> 
-              <p class="white-text text-darken-2">E o que torna fácil a criação de folhas de estilo é que essas regras obedecem a uma estrutura 
-                muito simples, composta por seletor, propriedade e valor.</p>
-        </div>      
-              <div class="col s12 left">
-
-                
-                  <blockquote class="white-text text-darken-2">
-                    p {<br>
-                      color: red;<br>
-                    }          <br><br>
-                    
-                    O CSS usado na forma acima, faz com que:
-                    Um parágrafo fique com a cor vermelha.
-                    
-                  </blockquote>    
-              </div>
-          </p>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-------------------------------------------------------------------------
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12">Um framework front-end responsivo moderno baseado em Materialize Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" target="_blank" id="download-button" 
-          class="btn-large waves-effect waves-light teal lighten-1 btn pulse">Saiba mais</a>
-        </div>
-      </div>
-    </div>
-    <div class="parallax z-depth-5"><img src="BG2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
-
-  <div class="container">
-    <div class="section">-->
 
       <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
@@ -342,50 +297,33 @@
         </div>
       </div>
     </div>  
-      <!--
-        <div class="col l4 s5">
-          <h5 class="white-text">Curso</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Guilherme</a></li>
-            <li><a class="white-text" href="#!">Antônio</a></li>
-            <li><a class="white-text" href="#!">João Victor</a></li>
-            <li><a class="white-text" href="#!">João Fernando</a></li>
-          </ul>
-        </div>
 
-        <div class="col l4 s3">
-          <h5 class="white-text">Curso</h5>
-          <ul>
-            <li><a class="white-text" href="#!">ADS</a></li>
-            <li><a class="white-text" href="#!">ADS</a></li>
-            <li><a class="white-text" href="#!">ADS</a></li>
-            <li><a class="white-text" href="#!">ADS</a></li>
-          </ul>
-        </div>
-        <div class="col l4 s3">
-          <h5 class="white-text">Semestre</h5>
-          <ul>
-            <li><a class="white-text" href="#!">6</a></li>
-            <li><a class="white-text" href="#!">6</a></li>
-            <li><a class="white-text" href="#!">6</a></li>
-            <li><a class="white-text" href="#!">6</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
     <div class="footer-copyright">
       <div class="container center">
       conteudo produzido por <a class="brown-text text-lighten-3" href="https://guilhermeeletricista.vercel.app/" target="_blank">ADS 2022 Semestre 6</a>
       </div>
     </div>
   </footer>
-
-
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  
+  <script>
+    const btn = document.querySelector('button');
+
+    function random(number) {
+      return Math.floor(Math.random() * (number+1));
+    }
+
+    function bgChange(e) {
+      const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+      e.target.style.backgroundColor = rndCol;
+      console.log(e);
+    }
+
+    btn.addEventListener('click', bgChange);
+  </script>
 
   </body>
 </html>
-
